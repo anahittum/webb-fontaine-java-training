@@ -24,8 +24,10 @@ public class Weekday {
                 break;
             case (5):
                 System.out.println("Friday");
+                break;
             case (6):
                 System.out.println("Saturday");
+                break;
             case (7):
                 System.out.println("Sunday");
                 break;

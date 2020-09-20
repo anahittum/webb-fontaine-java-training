@@ -1,13 +1,13 @@
-package week1;
+package week1.homework1;
 
 import java.util.Scanner;
 
-public class InchToMeter {
+public class WeightOnMoon {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter a number to convert");
-        double input = scanner.nextDouble();
-        double M = input * 0.0254;
-        System.out.println(input + " inch is " + M + " meters");
+        float input = scanner.nextFloat();
+        float C = input * 0.17f;
+        System.out.println(" Your weight on the Moon is " + C );
     }
 }

@@ -1,4 +1,4 @@
-package week1.homework2;
+package week2.homework2;
 
 //Given an array of integers and one integer k, find an element that occurs exactly k times.
 

@@ -1,4 +1,4 @@
-package week1.homework2;
+package week2.homework2;
 
 //Input a number and the program will print a message a given number of times. The process should continue until the user inputs the number '-1'.
 

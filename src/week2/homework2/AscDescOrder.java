@@ -1,8 +1,6 @@
-package week1.homework2;
+package week2.homework2;
 
 //Write a program that will sort the given mass in ascending and descending order. Use Math.random() method for initializing array elements.
-
-import java.util.Scanner;
 
 public class AscDescOrder {
     public static void main(String[] args) {

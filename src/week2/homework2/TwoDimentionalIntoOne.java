@@ -1,4 +1,4 @@
-package week1.homework2;
+package week2.homework2;
 
 public class TwoDimentionalIntoOne {
     public static void main(String[] args) {

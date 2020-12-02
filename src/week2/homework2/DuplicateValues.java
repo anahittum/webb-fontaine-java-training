@@ -1,4 +1,4 @@
-package week1.homework2;
+package week2.homework2;
 
 //Write a program that will find and separate the repeating values of two given arrays.
 

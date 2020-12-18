@@ -130,7 +130,7 @@ class StringAPI {
 
     String reverseString(String str) {
         if ((str == null) || (str.length() <= 1))
-            return str;
+            return OUT_OF_BOUNDS;
         else {
             System.out.print(str.charAt(str.length() - 1));
             reverseString(str.substring(0, str.length() - 1));

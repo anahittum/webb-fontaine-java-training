@@ -6,14 +6,17 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class PointAndLineTest {
+    private PointAndLineAPI api;
 
     @BeforeClass
     public void setUp() {
+        api = new PointAndLineAPI();
     }
 
     @AfterClass
     public void tearDown() {
         System.out.println("after all tests");
+        api = null;
     }
 
     @Test
@@ -26,10 +29,9 @@ public class PointAndLineTest {
 
     @Test
     public void testGetDistanceNullCheck() {
-        Point p1 = null;
         Point p2 = new Point(7, 12);
-        double result = PointAndLineAPI.getDistance(p1, p2);
-        Assert.assertEquals(result, 0.0, "This test has failed");
+        double result = PointAndLineAPI.getDistance(null, p2);
+        Assert.assertEquals(result, 0.0);
     }
 
     @Test
@@ -68,4 +70,16 @@ public class PointAndLineTest {
         Assert.assertTrue(result);
 
     }
+@Test
+
+    public void testIsPointInTriangle(){
+    Point p1 = new Point(2, 7);
+    Point p2 = new Point(4, 2);
+    Point p3 = new Point(1, 1);
+    Point p = new Point(2, 3);
+
+    boolean result = PointAndLineAPI.isPointInsideTriangle(p1, p2, p3, p);
+    Assert.assertTrue(result, "The given point is on the square");
+
+}
 }
